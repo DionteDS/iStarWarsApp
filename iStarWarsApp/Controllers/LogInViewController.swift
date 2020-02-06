@@ -26,6 +26,8 @@ class LogInViewController: UIViewController {
     
     @IBAction func handlerLogIn(_ sender: UIButton) {
         
+        sender.pulse()
+        
         SVProgressHUD.setDefaultStyle(SVProgressHUDStyle.dark)
         SVProgressHUD.show()
         
