@@ -13,6 +13,7 @@
 		42120B8023EBB9900019E9ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42120B7E23EBB9900019E9ED /* Main.storyboard */; };
 		42120B8223EBB9910019E9ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42120B8123EBB9910019E9ED /* Assets.xcassets */; };
 		42120B8523EBB9910019E9ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42120B8323EBB9910019E9ED /* LaunchScreen.storyboard */; };
+		42120B8D23EBBAB10019E9ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42120B8C23EBBAB10019E9ED /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		42120B8123EBB9910019E9ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42120B8423EBB9910019E9ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42120B8623EBB9910019E9ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42120B8C23EBBAB10019E9ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				42120B8123EBB9910019E9ED /* Assets.xcassets */,
 				42120B8323EBB9910019E9ED /* LaunchScreen.storyboard */,
 				42120B8623EBB9910019E9ED /* Info.plist */,
+				42120B8C23EBBAB10019E9ED /* GoogleService-Info.plist */,
 			);
 			path = iStarWarsApp;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42120B8523EBB9910019E9ED /* LaunchScreen.storyboard in Resources */,
+				42120B8D23EBBAB10019E9ED /* GoogleService-Info.plist in Resources */,
 				42120B8223EBB9910019E9ED /* Assets.xcassets in Resources */,
 				42120B8023EBB9900019E9ED /* Main.storyboard in Resources */,
 			);
