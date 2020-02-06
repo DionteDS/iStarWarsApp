@@ -19,6 +19,7 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
 
         navigationItem.title = "Sign Up"
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     }
     
     @IBAction func handleSignUp(_ sender: UIButton) {

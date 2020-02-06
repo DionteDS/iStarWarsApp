@@ -164,24 +164,15 @@
                                     <action selector="handleSignUp:" destination="tZh-7p-1Gf" eventType="touchUpInside" id="gkg-2A-cmn"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAr-Dy-M8n">
-                                <rect key="frame" x="15" y="118" width="384" height="35"/>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
-                                <color key="textColor" red="1" green="0.97931915940000003" blue="0.54976672029999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="MUM-NM-zhd" firstAttribute="centerY" secondItem="OE6-Ke-4Aa" secondAttribute="centerY" id="0JY-IR-5Hk"/>
                             <constraint firstItem="MUM-NM-zhd" firstAttribute="centerX" secondItem="OE6-Ke-4Aa" secondAttribute="centerX" id="7k8-bL-aKl"/>
                             <constraint firstItem="HXc-KP-CGc" firstAttribute="trailing" secondItem="4wE-Z9-uDR" secondAttribute="trailing" constant="15" id="Blo-Aq-Q6F"/>
-                            <constraint firstItem="PAr-Dy-M8n" firstAttribute="leading" secondItem="HXc-KP-CGc" secondAttribute="leading" constant="15" id="FvE-vn-j4p"/>
                             <constraint firstItem="HXc-KP-CGc" firstAttribute="bottom" secondItem="4wE-Z9-uDR" secondAttribute="bottom" constant="40" id="NpA-xt-vPp"/>
                             <constraint firstItem="HXc-KP-CGc" firstAttribute="trailing" secondItem="MUM-NM-zhd" secondAttribute="trailing" constant="15" id="aWN-dM-hxM"/>
                             <constraint firstItem="MUM-NM-zhd" firstAttribute="leading" secondItem="HXc-KP-CGc" secondAttribute="leading" constant="15" id="bOy-On-FJ3"/>
-                            <constraint firstItem="HXc-KP-CGc" firstAttribute="trailing" secondItem="PAr-Dy-M8n" secondAttribute="trailing" constant="15" id="rcD-ax-ZxH"/>
-                            <constraint firstItem="PAr-Dy-M8n" firstAttribute="top" secondItem="HXc-KP-CGc" secondAttribute="top" constant="30" id="sM6-CD-ayp"/>
                             <constraint firstItem="4wE-Z9-uDR" firstAttribute="leading" secondItem="HXc-KP-CGc" secondAttribute="leading" constant="15" id="tYn-Iq-VjN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HXc-KP-CGc"/>
