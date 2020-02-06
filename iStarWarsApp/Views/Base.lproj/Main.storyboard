@@ -195,11 +195,15 @@
                     <view key="view" contentMode="scaleToFill" id="gsV-kD-RcU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="DnA-jh-fgI"/>
                     </view>
                     <navigationItem key="navigationItem" id="hou-c4-zdZ">
-                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="0Zc-q7-7Sl"/>
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="0Zc-q7-7Sl">
+                            <connections>
+                                <action selector="tappedLogout:" destination="3IW-nf-RIj" id="s1L-HJ-WhD"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zbf-Cn-kDh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
