@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SVProgressHUD
 
 class SignUpViewController: UIViewController {
     
@@ -22,14 +23,26 @@ class SignUpViewController: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     }
     
+    
+    // Allow the user to create their account
     @IBAction func handleSignUp(_ sender: UIButton) {
+        SVProgressHUD.setDefaultStyle(SVProgressHUDStyle.dark)
+        SVProgressHUD.show()
         
+        // Check if email and password are not nil
         guard let email = emailField.text else { return }
         guard let password = passwordField.text else { return }
         
+        // Create the user using email and password
         Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
             if error != nil {
                 print("Error \(error!.localizedDescription)")
+            } else {
+                print("Sucess!")
+                
+                SVProgressHUD.dismiss()
+                
+                self.performSegue(withIdentifier: "goToHomePage", sender: self)
             }
         }
     }

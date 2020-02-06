@@ -161,7 +161,7 @@
                                     <color key="titleColor" red="1" green="0.97931915940000003" blue="0.54976672029999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <action selector="handleSignUp:" destination="tZh-7p-1Gf" eventType="touchUpInside" id="gkg-2A-cmn"/>
+                                    <action selector="handleSignUp:" destination="tZh-7p-1Gf" eventType="touchUpInside" id="Bgf-jR-ut8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -181,11 +181,28 @@
                     <connections>
                         <outlet property="emailField" destination="mfP-TV-ZK2" id="zBB-ye-45K"/>
                         <outlet property="passwordField" destination="plj-sO-XYt" id="Roc-fr-sc6"/>
+                        <segue destination="3IW-nf-RIj" kind="show" identifier="goToHomePage" id="pOc-dF-DZ4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pet-Hd-sMt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1899" y="447"/>
+        </scene>
+        <!--Home Page View Controller-->
+        <scene sceneID="Udy-mX-L4G">
+            <objects>
+                <viewController id="3IW-nf-RIj" customClass="HomePageViewController" customModule="iStarWarsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gsV-kD-RcU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="DnA-jh-fgI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hou-c4-zdZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zbf-Cn-kDh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2849" y="122"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dac-7C-Nd3">
