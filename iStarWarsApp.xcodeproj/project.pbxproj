@@ -16,6 +16,7 @@
 		42120B8D23EBBAB10019E9ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42120B8C23EBBAB10019E9ED /* GoogleService-Info.plist */; };
 		42120B9023EBC74C0019E9ED /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42120B8F23EBC74C0019E9ED /* CustomButton.swift */; };
 		42120B9323EBCC520019E9ED /* UIButton+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42120B9223EBCC520019E9ED /* UIButton+Design.swift */; };
+		42C0A93E23EBD38500548DAB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0A93D23EBD38500548DAB /* SignUpViewController.swift */; };
 		FB35FFE256C185936EE6851C /* Pods_iStarWarsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88938EF433E9FE7A6D05BCBD /* Pods_iStarWarsApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		42120B8C23EBBAB10019E9ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		42120B8F23EBC74C0019E9ED /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		42120B9223EBCC520019E9ED /* UIButton+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Design.swift"; sourceTree = "<group>"; };
+		42C0A93D23EBD38500548DAB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		7F4C3AAB8E5AA8092442E10A /* Pods-iStarWarsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStarWarsApp.release.xcconfig"; path = "Target Support Files/Pods-iStarWarsApp/Pods-iStarWarsApp.release.xcconfig"; sourceTree = "<group>"; };
 		8166E5784E0BD806546292F0 /* Pods-iStarWarsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStarWarsApp.debug.xcconfig"; path = "Target Support Files/Pods-iStarWarsApp/Pods-iStarWarsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		88938EF433E9FE7A6D05BCBD /* Pods_iStarWarsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iStarWarsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,8 +75,8 @@
 				42120B8E23EBC7390019E9ED /* Custom Button */,
 				42120B7823EBB9900019E9ED /* AppDelegate.swift */,
 				42120B7A23EBB9900019E9ED /* SceneDelegate.swift */,
-				42120B7C23EBB9900019E9ED /* MainViewController.swift */,
-				42120B7E23EBB9900019E9ED /* Main.storyboard */,
+				42C0A93C23EBD37100548DAB /* Controllers */,
+				42C0A93B23EBD36800548DAB /* Views */,
 				42120B8123EBB9910019E9ED /* Assets.xcassets */,
 				42120B8323EBB9910019E9ED /* LaunchScreen.storyboard */,
 				42120B8623EBB9910019E9ED /* Info.plist */,
@@ -97,6 +99,23 @@
 				42120B9223EBCC520019E9ED /* UIButton+Design.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		42C0A93B23EBD36800548DAB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42120B7E23EBB9900019E9ED /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		42C0A93C23EBD37100548DAB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				42120B7C23EBB9900019E9ED /* MainViewController.swift */,
+				42C0A93D23EBD38500548DAB /* SignUpViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		4EE2F3AED93435D2F47A8D88 /* Pods */ = {
@@ -232,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42C0A93E23EBD38500548DAB /* SignUpViewController.swift in Sources */,
 				42120B9023EBC74C0019E9ED /* CustomButton.swift in Sources */,
 				42120B7D23EBB9900019E9ED /* MainViewController.swift in Sources */,
 				42120B7923EBB9900019E9ED /* AppDelegate.swift in Sources */,
