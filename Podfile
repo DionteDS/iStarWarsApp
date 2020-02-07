@@ -7,6 +7,6 @@ target 'iStarWarsApp' do
   # Pods for iStarWarsApp
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
-  pod 'SVProgressHUD'
+  pod 'Alamofire'
 
 end

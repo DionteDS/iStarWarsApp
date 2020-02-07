@@ -15,6 +15,8 @@ class LogInViewController: UIViewController {
     
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var activity: UIActivityIndicatorView!
+    
     
 
     override func viewDidLoad() {
@@ -22,6 +24,8 @@ class LogInViewController: UIViewController {
 
         navigationItem.title = "Log In"
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        
+        activity.isHidden = true
     }
     
     
@@ -29,8 +33,11 @@ class LogInViewController: UIViewController {
         
         sender.pulse()
         
-//        SVProgressHUD.setDefaultStyle(SVProgressHUDStyle.dark)
-//        SVProgressHUD.show()
+        
+        self.activity.isHidden = false
+        self.activity.startAnimating()
+        
+        
         
         guard let email = emailField.text else { return }
         guard let password = passwordField.text else { return }
@@ -42,7 +49,8 @@ class LogInViewController: UIViewController {
             } else {
                 print("Loging in...")
                 
-//                SVProgressHUD.dismiss()
+                self.activity.isHidden = true
+                self.activity.stopAnimating()
                 
                 self.performSegue(withIdentifier: "goToHomePage", sender: self)
             }

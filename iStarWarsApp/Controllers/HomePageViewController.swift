@@ -21,6 +21,7 @@ class HomePageViewController: UIViewController {
         super.viewDidLoad()
         
         navigationItem.hidesBackButton = true
+        categoryCollectionView.backgroundColor = UIColor.darkGray
         
         let nib = UINib(nibName: "CategoryCollectionViewCell", bundle: nil)
         categoryCollectionView.register(nib, forCellWithReuseIdentifier: "peopleCell")

@@ -14,6 +14,8 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var activity: UIActivityIndicatorView!
+    
     
 
     override func viewDidLoad() {
@@ -21,13 +23,16 @@ class SignUpViewController: UIViewController {
 
         navigationItem.title = "Sign Up"
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        
+        activity.isHidden = true
     }
     
     
     // Allow the user to create their account
     @IBAction func handleSignUp(_ sender: UIButton) {
-//        SVProgressHUD.setDefaultStyle(SVProgressHUDStyle.dark)
-//        SVProgressHUD.show()
+        
+        self.activity.isHidden = false
+        self.activity.startAnimating()
         
         // Check if email and password are not nil
         guard let email = emailField.text else { return }
@@ -40,7 +45,8 @@ class SignUpViewController: UIViewController {
             } else {
                 print("Sucess!")
                 
-//                SVProgressHUD.dismiss()
+                self.activity.isHidden = true
+                self.activity.stopAnimating()
                 
                 self.performSegue(withIdentifier: "goToHomePage", sender: self)
             }
