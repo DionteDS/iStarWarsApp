@@ -26,12 +26,16 @@ class CharactersViewController: UIViewController {
     private func fetchData(url: String) {
         
         Alamofire.request(url, method: .get).responseJSON { (response) in
-            if let responseValue = response.response {
+            if let responseValue = response.result.value as! [String: Any]? {
                 print(responseValue)
-            }
-            
-            if let requestValue = response.request {
-                print(requestValue)
+                
+                if let responseData = responseValue["results"] as! [[String: Any]]? {
+                    print(responseData)
+                    self.people = responseData
+                    self.peopleCollectionView.reloadData()
+                }
+            } else {
+                print("Error getting data, \(response.error!)")
             }
         }
         

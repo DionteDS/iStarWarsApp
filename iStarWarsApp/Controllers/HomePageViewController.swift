@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-enum Category: String {
+private enum Category: String {
     case Characters = "Characters"
     case Planets = "Planets"
     case Starships = "Starships"
