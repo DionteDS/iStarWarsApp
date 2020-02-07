@@ -8,7 +8,7 @@
 
 import UIKit
 import Firebase
-import SVProgressHUD
+
 
 class SignUpViewController: UIViewController {
     
@@ -26,8 +26,8 @@ class SignUpViewController: UIViewController {
     
     // Allow the user to create their account
     @IBAction func handleSignUp(_ sender: UIButton) {
-        SVProgressHUD.setDefaultStyle(SVProgressHUDStyle.dark)
-        SVProgressHUD.show()
+//        SVProgressHUD.setDefaultStyle(SVProgressHUDStyle.dark)
+//        SVProgressHUD.show()
         
         // Check if email and password are not nil
         guard let email = emailField.text else { return }
@@ -40,7 +40,7 @@ class SignUpViewController: UIViewController {
             } else {
                 print("Sucess!")
                 
-                SVProgressHUD.dismiss()
+//                SVProgressHUD.dismiss()
                 
                 self.performSegue(withIdentifier: "goToHomePage", sender: self)
             }
@@ -48,4 +48,15 @@ class SignUpViewController: UIViewController {
     }
     
 
+}
+
+//MARK: - TextField Delegate Methods
+
+extension SignUpViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
 }

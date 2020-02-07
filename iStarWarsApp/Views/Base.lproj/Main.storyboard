@@ -56,7 +56,7 @@
                                         </subviews>
                                     </stackView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="AoU-gk-rRf">
-                                        <rect key="frame" x="20" y="231" width="374" height="246"/>
+                                        <rect key="frame" x="20" y="231" width="374.00000000000011" height="246"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="246" id="qi5-5u-dET"/>
                                             <constraint firstAttribute="width" constant="374" id="tRl-Jg-TYP"/>
@@ -121,6 +121,9 @@
                                         <color key="textColor" red="1" green="0.97931915940000003" blue="0.54976672029999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="tZh-7p-1Gf" id="sqP-mS-039"/>
+                                        </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Mc-Xm-hjk">
                                         <rect key="frame" x="0.0" y="90.5" width="384" height="0.5"/>
@@ -144,6 +147,9 @@
                                         <color key="textColor" red="1" green="0.97931915940000003" blue="0.54976672029999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="tZh-7p-1Gf" id="qyo-CG-GHM"/>
+                                        </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Whw-3e-MoW">
                                         <rect key="frame" x="0.0" y="201.5" width="384" height="0.5"/>
@@ -273,6 +279,9 @@
                                         <color key="textColor" red="1" green="0.97931915940000003" blue="0.54976672029999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="NON-UV-rMz" id="zqz-VJ-If7"/>
+                                        </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I9k-yH-0Va">
                                         <rect key="frame" x="0.0" y="90.5" width="384" height="0.5"/>
@@ -296,6 +305,9 @@
                                         <color key="textColor" red="1" green="0.97931915940000003" blue="0.54976672029999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="NON-UV-rMz" id="PCH-0c-es7"/>
+                                        </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dXD-7r-YBG">
                                         <rect key="frame" x="0.0" y="201.5" width="384" height="0.5"/>
@@ -364,6 +376,6 @@
         <image name="logo" width="694" height="419"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fv2-4X-yx3"/>
+        <segue reference="pOc-dF-DZ4"/>
     </inferredMetricsTieBreakers>
 </document>

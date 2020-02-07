@@ -8,7 +8,8 @@
 
 import UIKit
 import Firebase
-import SVProgressHUD
+
+
 
 class LogInViewController: UIViewController {
     
@@ -28,8 +29,8 @@ class LogInViewController: UIViewController {
         
         sender.pulse()
         
-        SVProgressHUD.setDefaultStyle(SVProgressHUDStyle.dark)
-        SVProgressHUD.show()
+//        SVProgressHUD.setDefaultStyle(SVProgressHUDStyle.dark)
+//        SVProgressHUD.show()
         
         guard let email = emailField.text else { return }
         guard let password = passwordField.text else { return }
@@ -41,7 +42,7 @@ class LogInViewController: UIViewController {
             } else {
                 print("Loging in...")
                 
-                SVProgressHUD.dismiss()
+//                SVProgressHUD.dismiss()
                 
                 self.performSegue(withIdentifier: "goToHomePage", sender: self)
             }
@@ -49,7 +50,16 @@ class LogInViewController: UIViewController {
         }
         
     }
-    
-    
 
+}
+
+//MARK: - TextField Delegate Methods
+
+extension LogInViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
 }
