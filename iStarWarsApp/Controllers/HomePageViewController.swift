@@ -9,6 +9,14 @@
 import UIKit
 import Firebase
 
+enum Category: String {
+    case Characters = "Characters"
+    case Planets = "Planets"
+    case Starships = "Starships"
+    case Vehicles = "Vehicles"
+    case Films = "Films"
+}
+
 class HomePageViewController: UIViewController {
     
     @IBOutlet weak var categoryCollectionView: UICollectionView!
@@ -16,6 +24,7 @@ class HomePageViewController: UIViewController {
     private var layout: UICollectionViewFlowLayout!
     private let categories: [String] = ["Characters", "Planets", "Starships", "Vehicles", "Films"]
     private let colors: [UIColor] = [.cyan, .red, .green, .blue, .purple]
+    private var row = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -103,6 +112,30 @@ extension HomePageViewController: UICollectionViewDelegate, UICollectionViewData
         
         return cell
         
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        if let rowIndex = collectionView.indexPathsForSelectedItems?.first {
+            row = rowIndex.row
+        }
+        
+        let category = categories[row]
+        
+        switch category {
+        case Category.Characters.rawValue:
+            performSegue(withIdentifier: "goToCharacters", sender: self)
+        default:
+            print("No category")
+        }
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "goToCharacters" {
+            let controller = segue.destination as! CharactersViewController
+        }
     }
     
     

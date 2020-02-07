@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,10 +16,11 @@
 		42120B8D23EBBAB10019E9ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42120B8C23EBBAB10019E9ED /* GoogleService-Info.plist */; };
 		42120B9023EBC74C0019E9ED /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42120B8F23EBC74C0019E9ED /* CustomButton.swift */; };
 		42120B9323EBCC520019E9ED /* UIButton+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42120B9223EBCC520019E9ED /* UIButton+Design.swift */; };
-		42158B4523EDE02F00585703 /* BuildFile in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		42158B4523EDE02F00585703 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		421CD08C23ECA42100233369 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421CD08A23ECA42100233369 /* CategoryCollectionViewCell.swift */; };
 		421CD08D23ECA42100233369 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 421CD08B23ECA42100233369 /* CategoryCollectionViewCell.xib */; };
 		421CD08F23ECA93D00233369 /* UICollectionViewCell+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421CD08E23ECA93D00233369 /* UICollectionViewCell+Design.swift */; };
+		4239BC6423EE07A800E65FC0 /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4239BC6323EE07A800E65FC0 /* CharactersViewController.swift */; };
 		42C0A93E23EBD38500548DAB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0A93D23EBD38500548DAB /* SignUpViewController.swift */; };
 		42C0A94023EBDF8D00548DAB /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0A93F23EBDF8D00548DAB /* HomePageViewController.swift */; };
 		42C0A94223EBE5FE00548DAB /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0A94123EBE5FE00548DAB /* LogInViewController.swift */; };
@@ -33,7 +34,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				42158B4523EDE02F00585703 /* BuildFile in Embed Frameworks */,
+				42158B4523EDE02F00585703 /* (null) in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,6 +56,7 @@
 		421CD08A23ECA42100233369 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		421CD08B23ECA42100233369 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		421CD08E23ECA93D00233369 /* UICollectionViewCell+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Design.swift"; sourceTree = "<group>"; };
+		4239BC6323EE07A800E65FC0 /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
 		42C0A93D23EBD38500548DAB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		42C0A93F23EBDF8D00548DAB /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		42C0A94123EBE5FE00548DAB /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				42120B8E23EBC7390019E9ED /* Custom Button */,
 				42120B7823EBB9900019E9ED /* AppDelegate.swift */,
 				42120B7A23EBB9900019E9ED /* SceneDelegate.swift */,
+				4239BC6223EE078000E65FC0 /* Characters */,
 				42C0A93C23EBD37100548DAB /* Controllers */,
 				42C0A93B23EBD36800548DAB /* Views */,
 				42120B8123EBB9910019E9ED /* Assets.xcassets */,
@@ -135,6 +138,14 @@
 				421CD08B23ECA42100233369 /* CategoryCollectionViewCell.xib */,
 			);
 			path = "Custom cells";
+			sourceTree = "<group>";
+		};
+		4239BC6223EE078000E65FC0 /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				4239BC6323EE07A800E65FC0 /* CharactersViewController.swift */,
+			);
+			path = Characters;
 			sourceTree = "<group>";
 		};
 		42C0A93B23EBD36800548DAB /* Views */ = {
@@ -283,6 +294,7 @@
 				42120B7923EBB9900019E9ED /* AppDelegate.swift in Sources */,
 				42120B9323EBCC520019E9ED /* UIButton+Design.swift in Sources */,
 				42120B7B23EBB9900019E9ED /* SceneDelegate.swift in Sources */,
+				4239BC6423EE07A800E65FC0 /* CharactersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
