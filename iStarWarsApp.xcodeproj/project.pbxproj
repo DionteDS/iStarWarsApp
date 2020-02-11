@@ -16,6 +16,8 @@
 		42120B8D23EBBAB10019E9ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42120B8C23EBBAB10019E9ED /* GoogleService-Info.plist */; };
 		42120B9023EBC74C0019E9ED /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42120B8F23EBC74C0019E9ED /* CustomButton.swift */; };
 		42120B9323EBCC520019E9ED /* UIButton+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42120B9223EBCC520019E9ED /* UIButton+Design.swift */; };
+		421280E723F35A1F00E08D5B /* PeopleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421280E523F35A1F00E08D5B /* PeopleCollectionViewCell.swift */; };
+		421280E823F35A1F00E08D5B /* PeopleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 421280E623F35A1F00E08D5B /* PeopleCollectionViewCell.xib */; };
 		42158B4523EDE02F00585703 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		421CD08C23ECA42100233369 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421CD08A23ECA42100233369 /* CategoryCollectionViewCell.swift */; };
 		421CD08D23ECA42100233369 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 421CD08B23ECA42100233369 /* CategoryCollectionViewCell.xib */; };
@@ -53,6 +55,8 @@
 		42120B8C23EBBAB10019E9ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		42120B8F23EBC74C0019E9ED /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		42120B9223EBCC520019E9ED /* UIButton+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Design.swift"; sourceTree = "<group>"; };
+		421280E523F35A1F00E08D5B /* PeopleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCollectionViewCell.swift; sourceTree = "<group>"; };
+		421280E623F35A1F00E08D5B /* PeopleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeopleCollectionViewCell.xib; sourceTree = "<group>"; };
 		421CD08A23ECA42100233369 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		421CD08B23ECA42100233369 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		421CD08E23ECA93D00233369 /* UICollectionViewCell+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Design.swift"; sourceTree = "<group>"; };
@@ -98,7 +102,8 @@
 		42120B7723EBB9900019E9ED /* iStarWarsApp */ = {
 			isa = PBXGroup;
 			children = (
-				421CD08923ECA3FE00233369 /* Custom cells */,
+				421280E423F35A0900E08D5B /* Custom People Cell */,
+				421CD08923ECA3FE00233369 /* Custom Category Cells */,
 				42120B9123EBC76B0019E9ED /* Extension */,
 				42120B8E23EBC7390019E9ED /* Custom Button */,
 				42120B7823EBB9900019E9ED /* AppDelegate.swift */,
@@ -131,13 +136,22 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		421CD08923ECA3FE00233369 /* Custom cells */ = {
+		421280E423F35A0900E08D5B /* Custom People Cell */ = {
+			isa = PBXGroup;
+			children = (
+				421280E523F35A1F00E08D5B /* PeopleCollectionViewCell.swift */,
+				421280E623F35A1F00E08D5B /* PeopleCollectionViewCell.xib */,
+			);
+			path = "Custom People Cell";
+			sourceTree = "<group>";
+		};
+		421CD08923ECA3FE00233369 /* Custom Category Cells */ = {
 			isa = PBXGroup;
 			children = (
 				421CD08A23ECA42100233369 /* CategoryCollectionViewCell.swift */,
 				421CD08B23ECA42100233369 /* CategoryCollectionViewCell.xib */,
 			);
-			path = "Custom cells";
+			path = "Custom Category Cells";
 			sourceTree = "<group>";
 		};
 		4239BC6223EE078000E65FC0 /* Characters */ = {
@@ -249,6 +263,7 @@
 				42120B8D23EBBAB10019E9ED /* GoogleService-Info.plist in Resources */,
 				42120B8223EBB9910019E9ED /* Assets.xcassets in Resources */,
 				42120B8023EBB9900019E9ED /* Main.storyboard in Resources */,
+				421280E823F35A1F00E08D5B /* PeopleCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +304,7 @@
 				42C0A94023EBDF8D00548DAB /* HomePageViewController.swift in Sources */,
 				42120B9023EBC74C0019E9ED /* CustomButton.swift in Sources */,
 				42120B7D23EBB9900019E9ED /* MainViewController.swift in Sources */,
+				421280E723F35A1F00E08D5B /* PeopleCollectionViewCell.swift in Sources */,
 				421CD08C23ECA42100233369 /* CategoryCollectionViewCell.swift in Sources */,
 				42C0A94223EBE5FE00548DAB /* LogInViewController.swift in Sources */,
 				42120B7923EBB9900019E9ED /* AppDelegate.swift in Sources */,
